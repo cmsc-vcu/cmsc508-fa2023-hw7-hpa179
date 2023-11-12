@@ -130,48 +130,29 @@ INSERT INTO peopleskills (skills_id, people_id, date_acquired)
 VALUES
     (1, 1, '2023-11-08'),  
     (3, 1, '2023-11-09'),  
-    (6, 1, '2023-11-10'); 
-
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (6, 1, '2023-11-10'), 
     (3, 2, '2023-11-08'), 
     (4, 2, '2023-11-09'),  
-    (5, 2, '2023-11-10');  
-    INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (5, 2, '2023-11-10'),  
     (1, 3, '2023-11-08'), 
-    (5, 3, '2023-11-10');  
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (5, 3, '2023-11-10'),  
     (0, 4, '2023-11-08'), 
-    (0, 4, '2023-11-09');  
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (0, 4, '2023-11-09'),  
     (3, 5, '2023-11-08'),  
-    (6, 5, '2023-11-09');  
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (6, 5, '2023-11-09'),  
     (2, 6, '2023-11-08'),  
     (3, 6, '2023-11-09'),  
-    (4, 6, '2023-11-10');  
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (4, 6, '2023-11-10'),  
     (3, 7, '2023-11-08'), 
     (5, 7, '2023-11-09'),  
-    (6, 7, '2023-11-10'); 
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (6, 7, '2023-11-10'),
     (1, 8, '2023-11-08'),  
     (3, 8, '2023-11-09'),  
     (5, 8, '2023-11-10'),  
-    (6, 8, '2023-11-11');  
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (6, 8, '2023-11-11'), 
     (2, 9, '2023-11-08'),  
     (5, 9, '2023-11-10'), 
-    (6, 9, '2023-11-11');  
-INSERT INTO peopleskills (skills_id, people_id, date_acquired)
-VALUES
+    (6, 9, '2023-11-11'), 
     (1, 10, '2023-11-08'), 
     (4, 10, '2023-11-09'),  
     (5, 10, '2023-11-10');
