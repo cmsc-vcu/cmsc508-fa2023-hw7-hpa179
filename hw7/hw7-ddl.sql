@@ -177,21 +177,21 @@ VALUES
     (5, 10, '2023-11-10');
 
 SELECT * FROM peopleskills;
-SELECT count(*) FROM peopleskills;
+-- SELECT count(*) FROM peopleskills;
 
-SELECT
-    people_last_name,
-    name,
-    tag
-FROM
-    peopleskills a
-INNER JOIN people b on (a.people_id=b.people_id)
-INNER JOIN skills c on (a.skills_Id=c.id)
-WHERE
-    people_last_name='Person 1'
-ORDER BY
-    name,
-    people_last_name;
+-- SELECT
+--     people_last_name,
+--     name,
+--     tag
+-- FROM
+--     peopleskills a
+-- INNER JOIN people b on (a.people_id=b.people_id)
+-- INNER JOIN skills c on (a.skills_Id=c.id)
+-- WHERE
+--     people_last_name='Person 1'
+-- ORDER BY
+--     name,
+--     people_last_name;
 
 
 # Section 8
