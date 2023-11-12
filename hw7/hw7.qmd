@@ -269,7 +269,7 @@ SELECT
 FROM
     people
 ORDER BY
-    people_last_name;
+    ABS(people_last_name);
 """
 ```
 
@@ -362,7 +362,7 @@ INNER JOIN roles r on (pr.role_id = r.id)
 WHERE
     r.name = 'DEVELOPER'
 ORDER BY
-    people_last_name;
+    ABS(people_last_name);
 """
 ```
 
