@@ -3387,15 +3387,45 @@ z-index: 1000;
 <div>
 <div>
 <pre class="mermaid mermaid-js">erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-    CUSTOMER{
-        int id
+    PEOPLE ||--o{ PEOPLESKILLS : HAVE
+    PEOPLE ||--o{ PEOPLESROLES : ASSIGNED_TO
+    SKILLS ||--o{ PEOPLESKILLS : REQUIRE
+    ROLES ||--o{ PEOPLESROLES : BELONGS_TO 
+    PEOPLE{
+        int people_id
         string first_name
         string last_name
+        string email
+        string linkedin_url
+        string headshot_url
+        string discord_handle
+        string brief_bio
+        date date_joined
     }
-    DELIVERY-ADDRESS {
+    SKILLS {
         int id
+        string name
+        string description
+        string tag
+        string url
+        string time_commitment
+    }
+    ROLES {
+        int id
+        string name
+        int sort_priority
+    }
+    PEOPLESKILLS {
+        int id
+        int people_id
+        int skills_id
+        date date_acquired
+    }
+    PEOPLESROLES {
+        int id
+        int people_id
+        int role_id
+        date date_assigned
     }
 </pre>
 </div>
@@ -4127,12 +4157,6 @@ z-index: 1000;
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>Person 4</td>
-<td>Tanya</td>
-<td>tanya4@gmail.com</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
 <td>Person 4</td>
 <td>Tanya</td>
 <td>tanya4@gmail.com</td>
