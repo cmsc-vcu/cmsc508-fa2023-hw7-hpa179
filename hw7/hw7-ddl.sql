@@ -110,8 +110,7 @@ CREATE TABLE peopleskills (
     date_acquired DATE NOT NULL
 );
 
-# Section 7
-);
+
 
 # Section 7
 # Populate peopleskills such that:
