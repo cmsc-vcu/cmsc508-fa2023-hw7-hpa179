@@ -387,11 +387,10 @@ SELECT
     people_first_name,
     people_email
 FROM
-    peopleskills a
-    LEFT JOIN people b on (a.people_id=b.people_id)
-    LEFT JOIN skills c on (a.skills_id=c.id)
+    people b
+    LEFT JOIN peopleskills a ON (b.people_id = a.people_id)
 WHERE
-    c.id IS NULL
+    a.skills_id IS NULL
 ORDER BY
     people_last_name;
 """
